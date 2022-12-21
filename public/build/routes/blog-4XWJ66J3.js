@@ -1,0 +1,1 @@
+import{a as r}from"/build/_shared/chunk-GKKIBUZE.js";import{c as t,n as l}from"/build/_shared/chunk-V6CUAHDB.js";import{d as e,g as o}from"/build/_shared/chunk-B7AP56NU.js";l();var n=e(o());function f(){return[{rel:"stylesheet",href:r}]}function i(){return(0,n.jsx)("main",{className:"contenedor",children:(0,n.jsx)(t,{})})}var m=i;export{m as default,f as links};

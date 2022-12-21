@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/blog.jsx"],
+  "sourcesContent": ["\r\nimport { Outlet } from '@remix-run/react'\r\nimport styles from '~/styles/blog.css'\r\n\r\n\r\nexport function links() {\r\n  return [{\r\n    rel: 'stylesheet',\r\n    href: styles\r\n  }]\r\n}\r\n\r\nfunction Blog() {\r\n\r\n  return (\r\n    <main className=\"contenedor\">\r\n      <Outlet />\r\n    </main>\r\n  )\r\n}\r\n\r\nexport default Blog\r\n"],
+  "mappings": ";;;;;;;;;;;;;AACA;AADA;AAKO,SAAS,QAAQ;AACtB,SAAO,CAAC;AAAA,IACN,KAAK;AAAA,IACL,MAAM;AAAA,EACR,CAAC;AACH;AAEA,SAAS,OAAO;AAEd,SACE,mDAAC;AAAA,IAAK,WAAU;AAAA,IACd,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAQ;AAAA,KADV;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAOA,gBAAQ;",
+  "names": ["blog_default"]
+}

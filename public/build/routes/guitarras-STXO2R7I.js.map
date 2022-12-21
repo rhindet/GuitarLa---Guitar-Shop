@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/guitarras.jsx"],
+  "sourcesContent": ["\r\nimport { Outlet,useOutletContext } from '@remix-run/react'\r\nimport styles from '~/styles/guitarras.css'\r\n\r\n\r\n\r\nexport function links() {\r\n  return [{\r\n    rel: 'stylesheet',\r\n    href: styles\r\n  }]\r\n}\r\n\r\n\r\nfunction Tienda() {\r\n  return (\r\n    <main className='contenedor'>\r\n      <Outlet\r\n        context={useOutletContext()}\r\n      />\r\n    </main>\r\n  )\r\n}\r\n\r\nexport default Tienda\r\n"],
+  "mappings": ";;;;;;;;;;;;;;AACA;AADA;AAMO,SAAS,QAAQ;AACtB,SAAO,CAAC;AAAA,IACN,KAAK;AAAA,IACL,MAAM;AAAA,EACR,CAAC;AACH;AAGA,SAAS,SAAS;AAChB,SACE,mDAAC;AAAA,IAAK,WAAU;AAAA,IACd,6DAAC;AAAA,MACC,SAAS,iBAAiB;AAAA,OAD5B;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,KAHF;AAAA;AAAA;AAAA;AAAA,SAIA;AAEJ;AAEA,IAAOA,qBAAQ;",
+  "names": ["guitarras_default"]
+}

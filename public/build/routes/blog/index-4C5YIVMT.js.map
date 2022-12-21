@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/blog/index.jsx"],
+  "sourcesContent": ["import { getPosts } from '~/models/post.server'\r\nimport { useLoaderData } from '@remix-run/react'\r\nimport ListadoPost from '~/components/listado-post'\r\n\r\n\r\n\r\nexport function meta() {\r\n    return {\r\n        title: 'GuitarLA - Nuestro Blog',\r\n        descripcion: 'GuitarLA, Blog de musica y venta de guitarras'\r\n    }\r\n}\r\n\r\nexport async function loader() {\r\n    const posts = await getPosts()\r\n    return posts.data\r\n}\r\n\r\n\r\nfunction Blog() {\r\n    const posts = useLoaderData()\r\n    return (\r\n        <ListadoPost\r\n            posts={posts}\r\n        />\r\n    )\r\n}\r\n\r\nexport default Blog\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA,kBAAyB;AACzB;AADA;AAMO,SAAS,OAAO;AACnB,SAAO;AAAA,IACH,OAAO;AAAA,IACP,aAAa;AAAA,EACjB;AACJ;AAQA,SAAS,OAAO;AACZ,QAAM,QAAQ,cAAc;AAC5B,SACI,mDAAC;AAAA,IACG;AAAA,KADJ;AAAA;AAAA;AAAA;AAAA,SAEA;AAER;AAEA,IAAO,eAAQ;",
+  "names": []
+}

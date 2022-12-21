@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/guitarras/index.jsx"],
+  "sourcesContent": ["import { getGuitarras } from '~/models/guitarras.server'\r\nimport { useLoaderData } from '@remix-run/react'\r\n\r\nimport ListadoGuitarras from '~/components/listado-guitarras'\r\n\r\nexport function meta() {\r\n    return {\r\n        title: 'GuitarLA - Tienda de Guitarras',\r\n        description: 'GuitarLA - Nuestra coleccion de guitarras'\r\n    }\r\n}\r\n\r\n\r\n\r\nexport async function loader() {\r\n    const guitarras = await getGuitarras()\r\n    return guitarras.data\r\n}\r\n\r\n\r\nfunction Tienda() {\r\n    const guitarras = useLoaderData()\r\n\r\n    return (\r\n\r\n        <ListadoGuitarras\r\n            guitarras={guitarras}\r\n        />\r\n    )\r\n}\r\n\r\nexport default Tienda\r\n"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA,uBAA6B;AAC7B;AADA;AAKO,SAAS,OAAO;AACnB,SAAO;AAAA,IACH,OAAO;AAAA,IACP,aAAa;AAAA,EACjB;AACJ;AAUA,SAAS,SAAS;AACd,QAAM,YAAY,cAAc;AAEhC,SAEI,mDAAC;AAAA,IACG;AAAA,KADJ;AAAA;AAAA;AAAA;AAAA,SAEA;AAER;AAEA,IAAO,oBAAQ;",
+  "names": []
+}
